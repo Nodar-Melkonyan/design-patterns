@@ -1,0 +1,17 @@
+class Guide extends User {
+  private guideLicense: string;
+  private verificationStatus: VerificationStatus;
+  private languages: string[];
+  private specialties: string[];
+  private biography: string;
+  private yearsOfExperience: number;
+  private tours: Tour[];
+  private availability: GuideAvailability[];
+  private rating: number;
+  
+  // Guide-specific actions
+  public createTour(tourData: TourData): Tour;
+  public updateAvailability(dates: Date[]): void;
+  public respondToCustomRequest(request: CustomTourRequest, proposal: TourProposal): void;
+  public calculateEarnings(timePeriod: DateRange): number;
+}
