@@ -1,0 +1,6 @@
+class ExternalIntegrationService {
+  geocodeAddress(address: string): Coordinates
+  validateBusinessRegistration(company: Company): ValidationResult
+  verifyGuideLicense(guide: Guide): VerificationResult
+  fetchCurrencyExchangeRates(): ExchangeRates
+}
