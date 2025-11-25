@@ -1,0 +1,15 @@
+class Review {
+  private id: string;
+  private tourist: Tourist;
+  private tour: Tour;
+  private guide?: Guide; // Optional: review specific guide
+  private rating: number; // 1-5
+  private comment: string;
+  private createdAt: Date;
+  private helpfulVotes: number;
+  
+  // Review actions
+  public markHelpful(): void;
+  public updateComment(newComment: string): void;
+  public calculateAverageRating(): number;
+}
