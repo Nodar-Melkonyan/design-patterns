@@ -1,0 +1,6 @@
+class PaymentCoordinationService {
+  processBookingPayment(booking: Booking, paymentMethod: PaymentMethod): PaymentResult
+  handlePaymentRefund(booking: Booking, refundAmount: Price): RefundResult
+  reconcilePayments(dateRange: DateRange): ReconciliationReport
+  handleFailedPayments(booking: Booking): RetryStrategy
+}
