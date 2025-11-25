@@ -1,0 +1,7 @@
+class NotificationCoordinationService {
+  sendBookingConfirmation(booking: Booking): void
+  notifyGuideAboutNewBooking(booking: Booking, guide: Guide): void
+  sendReminderNotifications(booking: Booking, hoursBefore: number): void
+  coordinateReviewReminders(completedBookings: Booking[]): void
+  handleSystemWideNotifications(notification: SystemNotification): void
+}
