@@ -1,0 +1,7 @@
+class ReviewManagementService {
+  calculateOverallRating(tour: Tour): number
+  updateProviderRatings(review: Review): void
+  validateReviewEligibility(tourist: Tourist, tour: Tour): boolean
+  detectSuspiciousReviewPatterns(review: Review): boolean
+  generateReviewSummary(tour: Tour): ReviewSummary
+}
