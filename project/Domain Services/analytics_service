@@ -1,0 +1,6 @@
+class PerformanceAnalyticsService {
+  calculateGuidePerformanceMetrics(guide: Guide, period: DateRange): PerformanceReport
+  generatePlatformGrowthMetrics(period: DateRange): GrowthReport
+  analyzeBookingTrends(dateRange: DateRange): TrendAnalysis
+  calculateCustomerSatisfactionScores(): SatisfactionReport
+}
