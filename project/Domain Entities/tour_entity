@@ -1,0 +1,24 @@
+class Tour {
+  private id: string;
+  private title: string;
+  private description: string;
+  private provider: User; // Guide or Company
+  private category: TourCategory;
+  private price: Price;
+  private duration: Duration;
+  private location: Location;
+  private images: Image[];
+  private itinerary: DayItinerary[];
+  private inclusions: string[];
+  private requirements: string[];
+  private maxParticipants: number;
+  private availability: TourAvailability[];
+  private rating: number;
+  private reviewCount: number;
+  
+  // Tour actions
+  public isAvailableOn(date: Date): boolean;
+  public calculateTotalPrice(participants: number, options: TourOptions): number;
+  public updateAvailability(dates: Date[]): void;
+  public addReview(review: Review): void;
+}
