@@ -1,0 +1,7 @@
+class AvailabilityManagementService {
+  checkGuideAvailability(guide: Guide, date: Date, duration: Duration): boolean
+  findAvailableGuidesForTour(tour: Tour, date: Date): Guide[]
+  checkTourCapacity(tour: Tour, date: Date, requestedParticipants: number): boolean
+  updateAvailabilityAfterBooking(booking: Booking): void
+  findAlternativeDates(tour: Tour, preferredDate: Date): Date[]
+}
