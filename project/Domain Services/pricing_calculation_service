@@ -1,0 +1,7 @@
+class PricingCalculationService {
+  calculateDynamicPricing(tour: Tour, date: Date, currentDemand: number): Price
+  calculateGroupDiscount(basePrice: Price, participantCount: number): Price
+  calculateSeasonalPricing(tour: Tour, date: Date): Price
+  calculateCustomTourPrice(requirements: CustomRequirements, guide: Guide): Price
+  applyPromotionalPricing(originalPrice: Price, promoCode: string): Price
+}
