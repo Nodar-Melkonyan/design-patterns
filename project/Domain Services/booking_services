@@ -1,0 +1,7 @@
+class BookingCoordinationService {
+  createBookingWithValidation(tourist: Tourist, tour: Tour, bookingData: BookingData): Booking
+  handleBookingCancellation(booking: Booking, cancellationReason: string): RefundResult
+  processBookingReschedule(booking: Booking, newDate: Date): RescheduleResult
+  validateBookingConstraints(bookingData: BookingData): ValidationResult
+  coordinateGroupBooking(mainBooking: Booking, additionalParticipants: number): Booking[]
+}
