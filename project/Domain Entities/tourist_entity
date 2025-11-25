@@ -1,0 +1,12 @@
+class Tourist extends User {
+  private preferences: TravelPreferences;
+  private bookings: Booking[];
+  private reviews: Review[];
+  private customRequests: CustomTourRequest[];
+  
+  // Tourist-specific actions
+  public bookTour(tour: Tour, date: Date, participants: number): Booking;
+  public createCustomRequest(requirements: string): CustomTourRequest;
+  public writeReview(booking: Booking, rating: number, comment: string): Review;
+  public cancelBooking(booking: Booking): void;
+}
