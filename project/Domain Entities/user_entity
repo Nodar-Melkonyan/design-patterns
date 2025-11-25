@@ -1,0 +1,12 @@
+abstract class User {
+  private id: string;
+  private email: string;
+  private password: string;
+  private profile: Profile;
+  private createdAt: Date;
+  private updatedAt: Date;
+  
+  // For all users
+  public updateProfile(profile: Partial<Profile>): void;
+  public changePassword(newPassword: string): void;
+}
