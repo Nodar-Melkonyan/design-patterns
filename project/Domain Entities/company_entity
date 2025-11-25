@@ -1,0 +1,15 @@
+class Company extends User {
+  private businessName: string;
+  private businessRegistration: string;
+  private companySize: CompanySize;
+  private description: string;
+  private guides: Guide[]; // Hired guides
+  private tours: Tour[];
+  private rating: number;
+  
+  // Company-specific actions
+  public hireGuide(guide: Guide): void;
+  public createTourPackage(tourData: TourData): Tour;
+  public assignGuideToTour(tour: Tour, guide: Guide): void;
+  public generatePerformanceReport(): CompanyReport;
+}
