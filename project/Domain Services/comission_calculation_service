@@ -1,0 +1,6 @@
+class CommissionCalculationService {
+  calculatePlatformCommission(bookingAmount: Price): Price
+  calculateGuidePayout(booking: Booking): Price
+  generatePayoutReport(provider: User, dateRange: DateRange): PayoutReport
+  handleRefundCommissionAdjustment(refund: Refund): CommissionAdjustment
+}
