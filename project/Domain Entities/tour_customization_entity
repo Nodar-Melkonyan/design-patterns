@@ -1,0 +1,20 @@
+class CustomTourRequest {
+  private id: string;
+  private tourist: Tourist;
+  private title: string;
+  private description: string;
+  private destination: string;
+  private budget: number;
+  private dates: DateRange;
+  private participants: number;
+  private interests: string[];
+  private status: RequestStatus;
+  private proposals: TourProposal[];
+  private createdAt: Date;
+  
+  // Custom request actions
+  public submit(): void;
+  public addProposal(proposal: TourProposal): void;
+  public acceptProposal(proposal: TourProposal): Booking;
+  public cancel(): void;
+}
