@@ -1,0 +1,7 @@
+class TourRecommendationService {
+  recommendToursForTourist(tourist: Tourist, limit: number = 10): Tour[]
+  recommendBasedOnPreviousBookings(tourist: Tourist): Tour[]
+  recommendSimilarTours(tour: Tour, limit: number = 5): Tour[]
+  recommendPopularToursInLocation(location: string, limit: number = 8): Tour[]
+  calculateMatchScore(tour: Tour, touristPreferences: TravelPreferences): number
+}
