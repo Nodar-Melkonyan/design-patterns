@@ -1,0 +1,6 @@
+class SearchOptimizationService {
+  rankSearchResults(tours: Tour[], searchCriteria: SearchCriteria): Tour[]
+  applyRelevanceScoring(tour: Tour, searchTerms: string[]): number
+  filterAndSortTours(tours: Tour[], filters: SearchFilters, sortBy: SortOption): Tour[]
+  suggestSearchAlternatives(failedSearch: SearchCriteria): SearchSuggestion[]
+}
