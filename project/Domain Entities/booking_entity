@@ -1,0 +1,19 @@
+class Booking {
+  private id: string;
+  private tourist: Tourist;
+  private tour: Tour;
+  private date: Date;
+  private participants: number;
+  private totalPrice: number;
+  private status: BookingStatus;
+  private specialRequirements: string;
+  private createdAt: Date;
+  private guide?: Guide; // Specific guide if assigned
+  
+  // Booking actions
+  public confirm(): void;
+  public cancel(): void;
+  public reschedule(newDate: Date): void;
+  public calculateRefundAmount(): number;
+  public isRefundable(): boolean;
+}
